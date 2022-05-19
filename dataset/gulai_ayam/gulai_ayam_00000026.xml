@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>gulai_ayam_00000026.jpg</filename>
+	<path>/my-project-name/gulai_ayam_00000026.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>gulai_ayam</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>52</xmin>
+			<ymin>10</ymin>
+			<xmax>1196</xmax>
+			<ymax>1104</ymax>
+		</bndbox>
+	</object>
+</annotation>

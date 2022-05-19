@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>soto_ayam_00000043.jpg</filename>
+	<path>/my-project-name/soto_ayam_00000043.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1260</width>
+		<height>709</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>soto</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>354</xmin>
+			<ymin>94</ymin>
+			<xmax>1184</xmax>
+			<ymax>669</ymax>
+		</bndbox>
+	</object>
+</annotation>

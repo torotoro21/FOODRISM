@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>tahu_gejrot_00000051.jpg</filename>
+	<path>/my-project-name/tahu_gejrot_00000051.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1000</width>
+		<height>1232</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>tahu_gejrot</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>497</ymin>
+			<xmax>943</xmax>
+			<ymax>1182</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>tahu_gejrot</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>480</xmin>
+			<ymin>3</ymin>
+			<xmax>997</xmax>
+			<ymax>396</ymax>
+		</bndbox>
+	</object>
+</annotation>

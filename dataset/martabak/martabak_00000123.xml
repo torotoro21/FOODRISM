@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>martabak_00000123.jpg</filename>
+	<path>/my-project-name/martabak_00000123.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>594</width>
+		<height>380</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>martabak</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>194</xmin>
+			<ymin>28</ymin>
+			<xmax>489</xmax>
+			<ymax>232</ymax>
+		</bndbox>
+	</object>
+</annotation>

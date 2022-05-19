@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>serabi_00000137.jpg</filename>
+	<path>/my-project-name/serabi_00000137.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>srabi</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>385</xmin>
+			<ymin>168</ymin>
+			<xmax>878</xmax>
+			<ymax>601</ymax>
+		</bndbox>
+	</object>
+</annotation>
