@@ -31,35 +31,35 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'bika_ambon':
+    if row_label == 'ayam_goreng':
         return 1
-    elif row_label == 'gudeg':
+    elif row_label == 'bika_ambon':
         return 2
-    elif row_label == 'gulai_ayam':
+    elif row_label == 'kembang_goyang':
         return 3
     elif row_label == 'kerak_telor':
         return 4
-    elif row_label == 'klepon':
+    elif row_label == 'ketupat':
         return 5
-    elif row_label == 'martabak':
+    elif row_label == 'klepon':
         return 6
-    elif row_label == 'nasi_tumpeng':
+    elif row_label == 'kue_lapis_pelangi':
         return 7
-    elif row_label == 'pecel':
+    elif row_label == 'pecel_lele':
         return 8
-    elif row_label == 'pempek':
+    elif row_label == 'pisang_ijo':
         return 9
-    elif row_label == 'rawon':
+    elif row_label == 'pisang_molen':
         return 10
-    elif row_label == 'Rendang':
+    elif row_label == 'pukis':
         return 11
-    elif row_label == 'sate':
+    elif row_label == 'rendang':
         return 12
-    elif row_label == 'soto':
+    elif row_label == 'sambal':
         return 13
-    elif row_label == 'srabi':
+    elif row_label == 'sate':
         return 14
-    elif row_label == 'tahu_gejrot':
+    elif row_label == 'tumpeng':
         return 15  
     else:
         None
