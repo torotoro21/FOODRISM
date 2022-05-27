@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>pisang_molen_0254.jpg</filename>
+	<path>/my-project-name/pisang_molen_0254.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>630</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>pisang_molen</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>166</xmin>
+			<ymin>251</ymin>
+			<xmax>602</xmax>
+			<ymax>430</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pisang_molen</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>567</xmin>
+			<ymin>338</ymin>
+			<xmax>1040</xmax>
+			<ymax>627</ymax>
+		</bndbox>
+	</object>
+</annotation>

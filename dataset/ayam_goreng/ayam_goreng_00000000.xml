@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>ayam_goreng_00000000.jpg</filename>
+	<path>/my-project-name/ayam_goreng_00000000.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>ayam_goreng</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>185</xmin>
+			<ymin>339</ymin>
+			<xmax>792</xmax>
+			<ymax>1024</ymax>
+		</bndbox>
+	</object>
+</annotation>

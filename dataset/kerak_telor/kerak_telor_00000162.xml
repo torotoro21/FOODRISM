@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>kerak_telor_00000162.jpg</filename>
+	<path>/my-project-name/kerak_telor_00000162.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1980</width>
+		<height>1028</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kerak_telor</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>0</xmin>
+			<ymin>241</ymin>
+			<xmax>644</xmax>
+			<ymax>758</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>kerak_telor</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>1323</xmin>
+			<ymin>255</ymin>
+			<xmax>1977</xmax>
+			<ymax>937</ymax>
+		</bndbox>
+	</object>
+</annotation>

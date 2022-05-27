@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>sate_0044.jpg</filename>
+	<path>/my-project-name/sate_0044.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>798</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>sate</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>140</xmin>
+			<ymin>170</ymin>
+			<xmax>640</xmax>
+			<ymax>762</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>rendang_00000159.jpg</filename>
+	<path>/my-project-name/rendang_00000159.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>427</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>rendang</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>31</xmin>
+			<ymin>6</ymin>
+			<xmax>625</xmax>
+			<ymax>352</ymax>
+		</bndbox>
+	</object>
+</annotation>

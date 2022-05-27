@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>kembang_goyang_00000080.jpg</filename>
+	<path>/my-project-name/kembang_goyang_00000080.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>970</width>
+		<height>544</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kembang_goyang</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>37</xmin>
+			<ymin>83</ymin>
+			<xmax>413</xmax>
+			<ymax>460</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>bika_ambon_00000066.jpg</filename>
+	<path>/my-project-name/bika_ambon_00000066.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>960</width>
+		<height>642</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>bika_ambon</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>222</xmin>
+			<ymin>170</ymin>
+			<xmax>507</xmax>
+			<ymax>613</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bika_ambon</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>460</xmin>
+			<ymin>379</ymin>
+			<xmax>740</xmax>
+			<ymax>642</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>ketupat_0220.jpg</filename>
+	<path>/my-project-name/ketupat_0220.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>665</width>
+		<height>374</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>ketupat</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>416</xmin>
+			<ymin>142</ymin>
+			<xmax>566</xmax>
+			<ymax>371</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>ketupat</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>290</xmin>
+			<ymin>98</ymin>
+			<xmax>462</xmax>
+			<ymax>314</ymax>
+		</bndbox>
+	</object>
+</annotation>

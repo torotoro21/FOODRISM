@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>pukis_00000174.jpg</filename>
+	<path>/my-project-name/pukis_00000174.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1496</width>
+		<height>1531</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>pukis</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>196</xmin>
+			<ymin>822</ymin>
+			<xmax>1288</xmax>
+			<ymax>1324</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pukis</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>309</xmin>
+			<ymin>175</ymin>
+			<xmax>1179</xmax>
+			<ymax>546</ymax>
+		</bndbox>
+	</object>
+</annotation>

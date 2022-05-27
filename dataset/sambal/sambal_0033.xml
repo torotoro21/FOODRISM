@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>sambal_0033.jpg</filename>
+	<path>/my-project-name/sambal_0033.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>550</width>
+		<height>567</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>sambal</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>250</xmin>
+			<ymin>333</ymin>
+			<xmax>442</xmax>
+			<ymax>502</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>klepon_00000012.jpg</filename>
+	<path>/my-project-name/klepon_00000012.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1260</width>
+		<height>709</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>klepon</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>719</xmin>
+			<ymin>149</ymin>
+			<xmax>927</xmax>
+			<ymax>343</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>klepon</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>669</xmin>
+			<ymin>376</ymin>
+			<xmax>1015</xmax>
+			<ymax>620</ymax>
+		</bndbox>
+	</object>
+</annotation>

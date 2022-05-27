@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>pecel_lele_00000275.jpg</filename>
+	<path>/my-project-name/pecel_lele_00000275.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>pecel_lele</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>345</xmin>
+			<ymin>73</ymin>
+			<xmax>424</xmax>
+			<ymax>467</ymax>
+		</bndbox>
+	</object>
+</annotation>

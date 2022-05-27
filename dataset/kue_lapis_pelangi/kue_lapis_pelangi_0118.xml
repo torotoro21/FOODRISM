@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>kue_lapis_pelangi_0118.jpg</filename>
+	<path>/my-project-name/kue_lapis_pelangi_0118.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1440</width>
+		<height>1440</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>kue_lapis_pelangi</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>741</ymin>
+			<xmax>718</xmax>
+			<ymax>1440</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>kue_lapis_pelangi</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>724</xmin>
+			<ymin>988</ymin>
+			<xmax>1308</xmax>
+			<ymax>1435</ymax>
+		</bndbox>
+	</object>
+</annotation>
