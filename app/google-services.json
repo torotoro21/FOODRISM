@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "836848903920",
+    "project_id": "foodrism-app",
+    "storage_bucket": "foodrism-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836848903920:android:e6e6cbc2074d72c0be4435",
+        "android_client_info": {
+          "package_name": "com.foodrism.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836848903920-h698pe7gldakhqvios95usj6ed7v036s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foodrism.apps",
+            "certificate_hash": "76b6bf8d9ba10b99dcebda2ec07b91c2cc9d6a1a"
+          }
+        },
+        {
+          "client_id": "836848903920-3uaf0gf9eld88p8o8h8oqb6u55oh87um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6lSAiKFNgoZkvhRibZZXQJk5kA3Qs1AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836848903920-3uaf0gf9eld88p8o8h8oqb6u55oh87um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

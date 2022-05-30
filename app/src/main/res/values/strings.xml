@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Foodrism</string>
+    <string name="login_success">Login Success!</string>
+    <string name="login_failed">Login Failed! Check your connection</string>
+    <string name="food_description">Food</string>
+    <string name="explore">Explore</string>
+    <string name="tvFoodName">Food Name</string>
+    <string name="food_name">Food Name</string>
+</resources>
