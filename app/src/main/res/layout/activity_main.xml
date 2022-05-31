@@ -35,8 +35,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
                     android:contentDescription="@string/food_description"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/bg_food" />
             </androidx.cardview.widget.CardView>
 
@@ -44,19 +44,16 @@
 
         <TextView
             android:id="@+id/tvExploreTitle"
+            style="@style/AppTheme"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:gravity="center"
             android:text="@string/explore"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_user_list"
@@ -65,5 +62,15 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintTop_toBottomOf="@+id/tvExploreTitle"
         tools:listitem="@layout/layout_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/openCamera"
+        android:src="@drawable/ic_camera"
+        tools:ignore="RtlHardcoded" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

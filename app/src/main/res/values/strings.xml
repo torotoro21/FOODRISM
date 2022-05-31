@@ -6,4 +6,12 @@
     <string name="explore">Explore</string>
     <string name="tvFoodName">Food Name</string>
     <string name="food_name">Food Name</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="logout">Logout</string>
+    <string name="profile_menu">Profile Menu</string>
+    <string name="logout_message">Are you sure want to logout?</string>
+    <string name="logout_continue">Yes</string>
+    <string name="logout_success">Logged out</string>
+    <string name="openCamera">Camera</string>
 </resources>
