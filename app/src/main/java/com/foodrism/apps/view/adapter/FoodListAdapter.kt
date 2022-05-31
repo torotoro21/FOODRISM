@@ -3,10 +3,12 @@ package com.foodrism.apps.view.adapter
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.foodrism.apps.databinding.LayoutItemBinding
 import com.foodrism.apps.model.FoodModel
 
 class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
     RecyclerView.Adapter<FoodListAdapter.ListViewHolder>() {
+
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -25,6 +27,7 @@ class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
     }
 
     class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
 
 
     }
