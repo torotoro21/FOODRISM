@@ -7,6 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.foodrism.apps.R
 import com.foodrism.apps.databinding.ActivityMainBinding
+import com.foodrism.apps.view.camera.CameraActivity
 import com.foodrism.apps.view.profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnCamera.setOnClickListener {
+            val intent = Intent(this@MainActivity, CameraActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

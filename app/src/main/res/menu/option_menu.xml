@@ -7,5 +7,4 @@
         android:icon="@drawable/ic_profile"
         app:showAsAction="collapseActionView|always" />
 
-
 </menu>

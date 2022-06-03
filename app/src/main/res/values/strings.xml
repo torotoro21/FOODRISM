@@ -1,8 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Foodrism</string>
     <string name="login_success">Login Success!</string>
     <string name="login_failed">Login Failed! Check your connection</string>
-    <string name="food_description">Food</string>
+    <string name="food_description">Food Description</string>
     <string name="explore">Explore</string>
     <string name="tvFoodName">Food Name</string>
     <string name="food_name">Food Name</string>
@@ -14,6 +14,12 @@
     <string name="logout_continue">Yes</string>
     <string name="logout_success">Logged out</string>
     <string name="openCamera">Camera</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="choose_picture">Choose Picture</string>
+    <string name="camera_error">Camera Error</string>
+    <string name="camera_shot_error">Cannot take photo</string>
+    <string name="camera_permission_error">Cannot start camera. Please allow the permission!</string>
 
 
     <string-array name="data_name">
@@ -29,44 +35,6 @@
         <item>Rawon</item>
     </string-array>
 
-    <string-array name="data_description">
-        <item>Klepon is a traditional Indonesian snack which is generally made from white glutinous rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut. Klepon cake has a chewy, dense, sweet texture and doesn't have any long shelf life. This food is made from white glutinous rice flour which is given green coloring either from suji leaves or pandan leaves mixed with coconut milk then formed into rounds, filled with brown sugar and boiled in water boiling</item>
-        <item>Pempek or empek-empek is a food made from soft ground fish meat mixed with starch or sago flour, as well as a composition of several other ingredients such as eggs, mashed garlic, flavoring, and salt. Pempek is usually served with vinegar sauce which has a sour, sweet, and spicy taste. Pempek is often referred to as a typical Palembang food, although almost all regions in South Sumatra, Jambi and Bengkulu also produce it. Pempek can be found easily in Palembang City, some areas of South Sumatra to Bengkulu province; some sell them in restaurants, some are on the roadside, and some are carried. In the 1880s, sellers used to carry a basket full of pempek while walking around selling their wares.</item>
-        <item>Tahu gejrot is a typical food from Cirebon, Indonesia made from tofu and other spices. Tahu gejrot consists of tofu that has been fried and then cut into small pieces and then eaten with a sauce with chili, garlic, shallots, and sugar. Tahu gejrot is also a typical Cirebon snack that is popular among children and adults, because of its distinctive taste sensation. Tahu gejrot is tofu which is cut into small pieces and then placed on a small plate and the tofu used is sumedang tofu. How to eat it is also unique, namely with a small stick and then pierce the tofu that has been cut into pieces. Currently, Tahu gejrot has spread throughout Indonesia such as Jakarta, Malang, Depok, Surabaya, and several places in other big cities in Indonesia.
-</item>
-        <item>Rendang or rendang is a meat dish originating from Minangkabau. This dish is produced from a long low temperature cooking process using various spices and coconut milk. The cooking process takes hours (usually about four hours) until the remaining chunks of meat are jet black and bran.
-The origin of rendang comes from Sumatra, especially Minangkabau. For the Minang people, rendang has been around for a long time and has become a traditional dish that is served in various traditional events and daily dishes. As a traditional dish, memorable rendang has been born since the Minang people held the first traditional event. Then this cooking art developed into another Malay-cultured overseas area; starting from Mandailing, Riau, Jambi, to the other country in Negeri Sembilan which is much favored by immigrants from Minangkabau. That's why rendang is widely known both in Sumatra and the Malay Peninsula.
-</item>
-        <item>Gudeg is a traditional Javanese dish from Yogyakarta and Central Java, Indonesia. Gudeg is made from young jackfruit (Javanese: gori, Indonesian: young jackfruit) which is boiled for several hours with palm sugar and coconut milk. Additional spices include garlic, shallots, candlenut, coriander seeds, galangal, bay leaf, and teak leaves, the latter of which imparts a reddish-brown color to the dish. It is often described as a "sweet green jackfruit stew". According to Murdijati Gardjito, a professor and researcher at the Center for Traditional Food Studies (PMKT), the UGM Center for Food and Nutrition Studies reported from KompasTravel, said that the emergence of Gudeg is expected to coincide with the formation of Jogja itself. Even right before Jogja existed.
-The history of gudeg begins in the 16th century when soldiers of the Mataram Kingdom dismantled the wilderness to build civilization. The location is now in the Kotagede area. It turns out that the forest contains many jackfruit and coconut trees.
-</item>
-        <item>Gulai is a type of food containing a rich, spicy and delicious curry-like sauce commonly found in Indonesia, Malaysia and Singapore. The main ingredients of this dish are usually poultry, mutton, beef, mutton, various kinds of offal, fish and seafood, as well as vegetables such as cassava leaves, raw jackfruit and banana stems.
-Gulai is often described as Indonesian curry, although it is also considered a local dish in Malaysia and Singapore. Gulai is a common name for curry dishes in Indonesia, although Indonesian, Malaysian and Singaporean cuisines also recognize curry (curry).
-Gulai originates from the Indonesian island of Sumatra and is considered a local adaptation of Indian curry, having evolved and originated from Indian influence in Southeast Asia. This dish is widely served in the Malay Archipelago, especially in Sumatra, the Malay Peninsula, Java, and Kalimantan. The thick, yellowish curry gravy is one of the most common sauces found in Minangkabau cuisine, used to impart a rich and spicy taste to meat, fish and vegetables. Goulash is often described as delicious and spicy, but it subtly combines the flavors of the different spices into one soft and subtle flavor that makes it difficult to tell which individual spices are used.
-</item>
-        <item>Soto Ayam is a traditional Indonesian dish that uses ingredients such as chicken, lontong, noodles, and rice vermicelli. Soto Ayam is popular in Singapore, Malaysia, and Suriname. Turmeric is added as one of its main ingredients which makes the yellow chicken broth. It is one of the most popular variants of Soto, a traditional soup commonly found in Indonesian cuisine. Besides chicken and vermicelli, it can also be served with hard-boiled eggs, slices of fried potatoes, and Chinese celery leaves. Fried shallots are usually added as a garnish. Coconut milk (Santan) is also used as an additional ingredient. Koya, a powder of mixed prawn crackers with fried garlic, or sambal is a common topping. Krupuk or emping is also a common topping. Lalapan is usually served as a side dish.
-</item>
-        <item>Kerak telor (English: Egg crust) is a Betawi traditional spicy omelet dish in Indonesian cuisine. It is made from glutinous rice cooked with egg and served with serundeng (fried shredded coconut), fried shallots, and dried shrimp as topping. It is considered as a snack and not as a main dish. The vendors of kerak telor are easily the most ubiquitous during the annual Jakarta Fair and it has also become a must-have menu item for visitors at the event.
-</item>
-        <item>Bika Ambon is a typical food from Medan, North Sumatra. Made from ingredients such as tapioca flour, eggs, sugar, and coconut milk. Now Bika Ambon is sold not only in original flavors but also in pandan, durian, cheese, and chocolate flavors. Bika Ambon, which is cooked for 12 hours, usually lasts at its best for four days, after which the cake begins to harden. This wet cake usually has a net on the inside. There is also Bika Ambon which is sold in various flavors such as pandan, chocolate, cheese and others.
-According to the explanation of M Muhar Omtatok, a humanist and historian, the Bika Ambon cake was inspired by Bika or Bingka, a typical Malay food. Furthermore, the frame is modified with a developer material in the form of palm wine/ palm wine until it is hollow and different from the original Bika cake. Furthermore, M. Muhar Omtatok mentioned that this cake is called Bika Ambon because it was first sold and popular at the intersection of Jl Ambon-Sei Kera Medan.
-</item>
-        <item>Rawon is an Indonesian beef soup. Rawon is one of the oldest historically identified dishes of ancient Java. It was mentioned as rarawwan in an ancient Javanese Taji inscription (901 CE) from the era of the Mataram Kingdom. Originating from East Java, rawon utilizes the black keluak nut as the main seasoning, which gives a dark color and nutty flavor to the soup. The soup is composed of a ground mixture of garlic, shallots, keluak, ginger, candlenut, turmeric, red chili, and salt, and is sautéed with oil. The sautéed mixture is then poured into boiled beef stock with diced beef slices.
 
-Lemongrass, galangal, bay leaves, kaffir lime leaves, and sugar are then added as seasonings.[2] The special dark or black color of rawon comes from the keluak as the main spice. The soup is usually garnished with green onion and fried shallot, and served with rice. Other toppings include bean sprouts, salted preserved egg, krupuk, and fried tolo beans (black-eyed pea).
-</item>
-    </string-array>
 
-    <string-array name="data_photo" tools:ignore="Typos">
-        <item>https://cdn0-production-images-kly.akamaized.net/12ve6U6OhG6bOtngU_svgwAXrHU=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3265521/original/082336300_1602549870-istock-1145447456-copy_ratio-16x9.jpg</item>
-        <item tools:ignore="TypographyDashes">https://cdn0-production-images-kly.akamaized.net/dIVK9vy-qc0_--pylyxb3Z3srdk=/0x0:5617x3166/1200x675/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2925736/original/069346800_1569828738-pempek_tanpa_ikan.jpg</item>
-        <item>http://kbu-cdn.com/dk/wp-content/uploads/tahu-gejrot.jpg</item>
-        <item>https://cdn0-production-images-kly.akamaized.net/k-8T2_IXluILxIDDBwJvGuzAtkE=/0x120:3000x1811/1200x675/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3282059/original/075075700_1604028408-shutterstock_1788721670.jpg</item>
-        <item>https://cdn1-production-images-kly.akamaized.net/R-EaIcYCMjJU1OtDIcygyho7EFI=/469x260/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2388182/original/087104900_1540012135-shutterstock_502495246.JPG</item>
-        <item>https://cdn-2.tstatic.net/tribunnews/foto/bank/images/resep-gulai-daging-1.jpg</item>
-        <item>https://www.bango.co.id/gfx/recipes/1460572598.jpg</item>
-        <item>https://cdn1-production-images-kly.akamaized.net/B-H6fM-HfQtEBZ29WlqLJHNvpfE=/0x560:5472x3644/469x260/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3174905/original/017299100_1594278741-shutterstock_471169994.jpg</item>
-        <item>https://img.okezone.com/content/2021/12/27/298/2523158/cara-panggang-bika-ambon-bersarang-bagus-dijamin-anti-gagal-hwWXjaqTnx.jpeg</item>
-        <item>https://selerasa.com/wp-content/uploads/2018/11/rawon-jogja-1200x720.jpg</item>
-    </string-array>
 </resources>
