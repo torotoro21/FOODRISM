@@ -7,5 +7,6 @@ import kotlinx.parcelize.Parcelize
 data class FoodModel(
     var name: String,
     var description: String,
-    var origin: String
+    var origin: String,
+    var url: String
 ) : Parcelable

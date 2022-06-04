@@ -87,6 +87,7 @@ class CameraActivity : AppCompatActivity() {
             val intent = Intent(this@CameraActivity, ScanActivity::class.java)
             intent.putExtra(ScanActivity.EXTRA_IMAGE, file)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finish()
         }
     }
@@ -139,6 +140,7 @@ class CameraActivity : AppCompatActivity() {
                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
                     )
                     startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                     finish()
                 }
             }

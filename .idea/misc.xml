@@ -4,19 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_camera.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_camera_baseline.xml" value="0.293" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_camera_filled.xml" value="0.293" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_camera_round.xml" value="0.293" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.227" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_photo_library.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable-v24/ic_switch_camera.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable/ic_camera.xml" value="0.293" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable/ic_camera_baseline.xml" value="0.293" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable/ic_camera_filled.xml" value="0.293" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable/ic_camera_round.xml" value="0.293" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/drawable/ic_launcher_background.xml" value="0.227" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/font/medium.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/font/open_sans_regular.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/font/regular.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_camera.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_detail.xml" value="0.24375" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_profile.xml" value="0.22" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_scan.xml" value="0.1388888888888889" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/layout_item.xml" value="0.3815028901734104" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/activity_scan.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/layout/layout_item.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/menu/option_menu.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.227" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Foodrism/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.227" />

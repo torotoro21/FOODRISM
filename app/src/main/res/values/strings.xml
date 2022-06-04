@@ -20,6 +20,12 @@
     <string name="camera_error">Camera Error</string>
     <string name="camera_shot_error">Cannot take photo</string>
     <string name="camera_permission_error">Cannot start camera. Please allow the permission!</string>
+    <string name="scanned_picture">Scanned Picture</string>
+    <string name="tvAnalyze">Analyze</string>
+    <string name="scan_result">Scan Result</string>
+    <string name="food_origin">Food Origin</string>
+    <string name="analyze_result">Analyze Result:</string>
+    <string name="not_available">Not available yet…</string>
 
 
     <string-array name="data_name">
@@ -35,6 +41,44 @@
         <item>Rawon</item>
     </string-array>
 
+    <string-array name="data_description">
+        <item>Klepon is a traditional Indonesian snack which is generally made from white glutinous rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut</item>
+        <item>Pempek or empek-empek is a food made from soft ground fish meat mixed with starch or sago flour, as well as a composition of several other ingredients such as eggs, mashed garlic, flavoring, and salt.</item>
+        <item>Tahu gejrot is a typical food from Cirebon, Indonesia made from tofu and other spices.</item>
+        <item>Rendang is produced from a long low temperature cooking process using various spices and coconut milk</item>
+        <item>Gudeg is made from young jackfruit (Javanese: gori, Indonesian: young jackfruit) which is boiled for several hours with palm sugar and coconut milk.</item>
+        <item>Gulai is a type of food containing a rich, spicy and delicious curry-like sauce</item>
+        <item>Soto Ayam is a traditional Indonesian dish that uses ingredients such as chicken</item>
+        <item>Kerak Telor is a Betawi traditional spicy omelet dish in Indonesian cuisine.</item>
+        <item>Bika Ambon is made from ingredients such as tapioca flour, eggs, sugar, and coconut milk</item>
+        <item>Rawon utilizes the black keluak nut as the main seasoning, which gives a dark color and nutty flavor to the soup.</item>
+    </string-array>
+
+    <string-array name="data_origin">
+        <item>Javanese</item>
+        <item>Palembang</item>
+        <item>Cirebon</item>
+        <item>Minangkabau</item>
+        <item>Yogyakarta</item>
+        <item>Sumatra</item>
+        <item>Indonesia</item>
+        <item>Jakarta</item>
+        <item>Medan</item>
+        <item>East Java</item>
+    </string-array>
+
+    <string-array name="data_photo_url">
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/klepon_00000005.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/pempek_00000000.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/tahu_gejrot_00000001.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/rendang_00000004.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/gudeg_00000005.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/gulai_ayam_00000033.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/soto_ayam_00000002.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/kerak_telor_00000000.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/bika_ambon_00000003.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/rawon_00000000.jpg</item>
+    </string-array>
 
 
 </resources>
