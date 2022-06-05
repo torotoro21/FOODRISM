@@ -77,7 +77,7 @@ class ScanActivity : AppCompatActivity() {
         val byteBuffer = tfImage.buffer
 
         // Input for reference
-        val inputFeature = TensorBuffer.createFixedSize(intArrayOf(1, 448, 448, 3), DataType.UINT8)
+        val inputFeature = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
         inputFeature.loadBuffer(byteBuffer)
 
         // Runs model inference
