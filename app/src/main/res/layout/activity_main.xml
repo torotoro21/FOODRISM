@@ -30,6 +30,7 @@
                 app:cardCornerRadius="24dp"
                 app:cardElevation="10dp">
 
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -37,6 +38,9 @@
                     android:contentDescription="@string/food_description"
                     android:scaleType="centerCrop"
                     android:src="@drawable/bg_food" />
+
+
+
             </androidx.cardview.widget.CardView>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>

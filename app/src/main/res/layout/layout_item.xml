@@ -20,8 +20,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cvFoodImage"
             android:layout_width="120dp"
+            android:layout_margin="8dp"
             android:layout_height="100dp"
-            card_view:cardCornerRadius="8dp"
+            card_view:cardCornerRadius="14dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent">
@@ -56,7 +57,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:ellipsize="end"
-            android:maxLines="5"
+            android:maxLines="3"
             android:textSize="15sp"
             android:textStyle="normal"
             card_view:layout_constraintBottom_toBottomOf="@+id/cvFoodImage"

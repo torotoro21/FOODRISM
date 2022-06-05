@@ -2,17 +2,23 @@
     <string name="app_name">Foodrism</string>
     <string name="login_success">Login Success!</string>
     <string name="login_failed">Login Failed! Check your connection</string>
-    <string name="food_description">Food Description</string>
+
     <string name="explore">Explore</string>
-    <string name="tvFoodName">Food Name</string>
+    <string name="food_description">Food Description</string>
+    <string name="food_ingredients">Main Ingredients:</string>
+    <string name="food_nutrition">Nutrition:</string>
+    <string name="food_calories">Calories:</string>
     <string name="food_name">Food Name</string>
+    <string name="food_origin">Food Origin</string>
+
     <string name="profile_photo">Profile Photo</string>
     <string name="profile_name">Profile Name</string>
-    <string name="logout">Logout</string>
+    <string name="logout">LOGOUT</string>
     <string name="profile_menu">Profile Menu</string>
     <string name="logout_message">Are you sure want to logout?</string>
     <string name="logout_continue">Yes</string>
     <string name="logout_success">Logged out</string>
+
     <string name="openCamera">Camera</string>
     <string name="capture_image">Capture Image</string>
     <string name="switch_camera">Switch Camera</string>
@@ -20,12 +26,12 @@
     <string name="camera_error">Camera Error</string>
     <string name="camera_shot_error">Cannot take photo</string>
     <string name="camera_permission_error">Cannot start camera. Please allow the permission!</string>
+
     <string name="scanned_picture">Scanned Picture</string>
-    <string name="tvAnalyze">Analyze</string>
     <string name="scan_result">Scan Result</string>
-    <string name="food_origin">Food Origin</string>
     <string name="analyze_result">Analyze Result:</string>
     <string name="not_available">Not available yet…</string>
+    <string name="profile_email">Email</string>
 
 
     <string-array name="data_name">
@@ -42,7 +48,7 @@
     </string-array>
 
     <string-array name="data_description">
-        <item>Klepon is a traditional Indonesian snack which is generally made from white glutinous rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut</item>
+        <item>Klepon is a traditional Indonesian snack which is generally made from white glutinous rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut. </item>
         <item>Pempek or empek-empek is a food made from soft ground fish meat mixed with starch or sago flour, as well as a composition of several other ingredients such as eggs, mashed garlic, flavoring, and salt.</item>
         <item>Tahu gejrot is a typical food from Cirebon, Indonesia made from tofu and other spices.</item>
         <item>Rendang is produced from a long low temperature cooking process using various spices and coconut milk</item>

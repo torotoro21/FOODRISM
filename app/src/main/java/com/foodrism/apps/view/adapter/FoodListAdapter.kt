@@ -45,6 +45,7 @@ class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
                     )
                 intent.putExtra(DetailActivity.EXTRA_DETAIL, food)
                 it.context.startActivity(intent, transition.toBundle())
+
             }
             binding.apply {
                 Glide.with(itemView)

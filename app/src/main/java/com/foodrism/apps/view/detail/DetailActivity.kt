@@ -27,6 +27,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun setupData() {
         val food = intent.getParcelableExtra<FoodModel>(EXTRA_DETAIL) as FoodModel
+        supportActionBar?.title = food.name
         binding.apply {
             Glide.with(applicationContext)
                 .load(food.url)
