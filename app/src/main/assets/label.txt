@@ -1,15 +1,15 @@
-klepon
-bika ambon
-rendang
-tahu gejrot
-pempek
-gudeg
-soto ayam
-sate
-martabak
-nasi tumpeneg
-pecel
-serabi
-rawon
-kerak telor
-gulai
+Gulai Ayam
+Kerak Telor
+Soto Ayam
+Bika Ambon
+Gudeg
+Klepon
+Martabak
+Nasi Tumpeng
+Pecel
+Pempek
+Rawon
+Rendang
+Sate
+Serabi
+Tahu Gejrot

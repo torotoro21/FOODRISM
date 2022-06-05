@@ -86,18 +86,18 @@ class ScanActivity : AppCompatActivity() {
         val max = getMax(outputFeature.floatArray)
 
         // Output
-        val modelResult = foodLabel[max]
+        val modelResult = foodLabel[max.toInt()]
         model.close()
 
         return modelResult
     }
 
-    private fun getMax(array: FloatArray): Int {
-        var index = 0
+    private fun getMax(array: FloatArray): Float {
+        var index = 0.0f
         var min = 0.0f
         for (i in 0..14) {
             if (array[i] > min) {
-                index = i
+                index = i.toFloat()
                 min = array[i]
             }
         }
