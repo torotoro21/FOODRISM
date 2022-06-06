@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.foodrism.apps.R
@@ -27,6 +28,7 @@ class ScanActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_IMAGE = "photo"
         const val EXTRA_STATE = "isBackCamera"
+        private const val TAG = "ScanActivity"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +61,6 @@ class ScanActivity : AppCompatActivity() {
                 binding.analyzeProgressBar.visibility = View.GONE
             }
         }
-
     }
 
     private fun analyzeModel(): String {
@@ -68,7 +69,7 @@ class ScanActivity : AppCompatActivity() {
         val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
         val foodLabel = inputString.split("\n")
 
-        // Create scaled input for model
+        // Create scaled image input
         val model = Model.newInstance(this)
         val bitmap = BitmapFactory.decodeFile(getFile?.path)
         val input: Bitmap = Bitmap.createScaledBitmap(bitmap, 448, 448, true)
@@ -76,29 +77,35 @@ class ScanActivity : AppCompatActivity() {
         val tfImage = TensorImage.fromBitmap(input)
         val byteBuffer = tfImage.buffer
 
+        /* val byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3)
+        byteBuffer.order(ByteOrder.nativeOrder())*/
+
         // Input for reference
-        val inputFeature = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
-        inputFeature.loadBuffer(byteBuffer)
+        val inputFeature0 =
+            TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
+        inputFeature0.loadBuffer(byteBuffer)
 
         // Runs model inference
-        val outputs = model.process(inputFeature)
-        val outputFeature = outputs.outputFeature0AsTensorBuffer
-        val max = getMax(outputFeature.floatArray)
+        val outputs = model.process(inputFeature0)
+        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+        val highestProbabilityIndex = getMax(outputFeature0.floatArray)
+
+        Log.i(TAG, "analyzeModel: outputFeature ${outputFeature0.floatArray}")
 
         // Output
-        val modelResult = foodLabel[max.toInt()]
+        val modelResult = foodLabel[highestProbabilityIndex]
         model.close()
 
         return modelResult
     }
 
-    private fun getMax(array: FloatArray): Float {
-        var index = 0.0f
+    private fun getMax(array: FloatArray): Int {
+        var index = 0
         var min = 0.0f
         for (i in 0..14) {
             if (array[i] > min) {
-                index = i.toFloat()
                 min = array[i]
+                index = i
             }
         }
         return index

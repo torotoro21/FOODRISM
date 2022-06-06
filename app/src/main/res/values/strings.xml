@@ -32,6 +32,7 @@
     <string name="analyze_result">Analyze Result:</string>
     <string name="not_available">Not available yet…</string>
     <string name="profile_email">Email</string>
+    <string name="logout_cancel">Cancel</string>
 
 
     <string-array name="data_name">

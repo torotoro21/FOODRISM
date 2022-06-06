@@ -76,6 +76,7 @@ class ProfileActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                setNegativeButton(getString(R.string.logout_cancel)) { _, _ -> }
                 create()
                 show()
             }

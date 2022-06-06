@@ -16,7 +16,6 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
     RecyclerView.Adapter<FoodListAdapter.ListViewHolder>() {
 
-
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -24,7 +23,6 @@ class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
         val view = LayoutItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ListViewHolder(view)
     }
-
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         holder.bind(foodList[position])
@@ -57,7 +55,5 @@ class FoodListAdapter(private val foodList: ArrayList<FoodModel>) :
                 tvFoodDescription.text = food.description
             }
         }
-
-
     }
 }

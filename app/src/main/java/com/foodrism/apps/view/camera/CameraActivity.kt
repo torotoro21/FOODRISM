@@ -48,7 +48,6 @@ class CameraActivity : AppCompatActivity() {
         setActions()
     }
 
-
     override fun onResume() {
         super.onResume()
         startCamera()
