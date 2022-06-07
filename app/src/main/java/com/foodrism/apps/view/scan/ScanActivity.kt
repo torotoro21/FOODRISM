@@ -77,8 +77,10 @@ class ScanActivity : AppCompatActivity() {
         val tfImage = TensorImage.fromBitmap(input)
         val byteBuffer = tfImage.buffer
 
-        /* val byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3)
-        byteBuffer.order(ByteOrder.nativeOrder())*/
+        /*
+        val byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3)
+        byteBuffer.order(ByteOrder.nativeOrder())
+        */
 
         // Input for reference
         val inputFeature0 =
