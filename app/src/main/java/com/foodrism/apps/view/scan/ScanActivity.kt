@@ -2,6 +2,7 @@ package com.foodrism.apps.view.scan
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -13,11 +14,22 @@ import com.foodrism.apps.databinding.ActivityScanBinding
 import com.foodrism.apps.helper.rotateBitmap
 import com.foodrism.apps.ml.Model
 import org.tensorflow.lite.DataType
+import org.tensorflow.lite.Interpreter
+import org.tensorflow.lite.support.common.FileUtil
+import org.tensorflow.lite.support.common.TensorProcessor
+import org.tensorflow.lite.support.common.ops.CastOp
+import org.tensorflow.lite.support.image.ImageProcessor
 import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.image.ops.ResizeOp
+import org.tensorflow.lite.support.image.ops.ResizeWithCropOrPadOp
+import org.tensorflow.lite.support.image.ops.Rot90Op
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+
 
 class ScanActivity : AppCompatActivity() {
 
@@ -41,9 +53,7 @@ class ScanActivity : AppCompatActivity() {
 
         getFile = intent.getSerializableExtra(EXTRA_IMAGE) as File
         scanResult()
-
     }
-
 
     private fun scanResult() {
         binding.analyzeProgressBar.visibility = View.VISIBLE
@@ -64,38 +74,52 @@ class ScanActivity : AppCompatActivity() {
     }
 
     private fun analyzeModel(): String {
-        // Parsing the label from assets/label.txt
-        val fileName = "label.txt"
-        val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
-        val foodLabel = inputString.split("\n")
-
         // Create scaled image input
+        val bitmap = BitmapFactory.decodeFile((getFile as File).path)
+        val resized = Bitmap.createScaledBitmap(bitmap, 224, 224, true) as Bitmap
+
+        val input = ByteBuffer.allocateDirect(224 * 224 * 3 * 4).order(ByteOrder.nativeOrder())
+        for (y in 0 until 224) {
+            for (x in 0 until 224) {
+                val px = resized.getPixel(x, y)
+                val r = Color.red(px)
+                val g = Color.green(px)
+                val b = Color.blue(px)
+
+                val rf = (r - 127) / 255f
+                val gf = (g - 127) / 255f
+                val bf = (b - 127) / 255f
+
+                input.putFloat(rf)
+                input.putFloat(gf)
+                input.putFloat(bf)
+            }
+        }
         val model = Model.newInstance(this)
-        val bitmap = BitmapFactory.decodeFile(getFile?.path)
-        val input: Bitmap = Bitmap.createScaledBitmap(bitmap, 448, 448, true)
-
-        val tfImage = TensorImage.fromBitmap(input)
-        val byteBuffer = tfImage.buffer
-
-        /*
-        val byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3)
-        byteBuffer.order(ByteOrder.nativeOrder())
-        */
 
         // Input for reference
         val inputFeature0 =
             TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
-        inputFeature0.loadBuffer(byteBuffer)
+        inputFeature0.loadBuffer(input)
 
         // Runs model inference
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-        val highestProbabilityIndex = getMax(outputFeature0.floatArray)
 
-        Log.i(TAG, "analyzeModel: outputFeature ${outputFeature0.floatArray}")
+        for (i in 0..14) {
+            val value = outputFeature0.floatArray[i]
+            Log.i(TAG, "analyzeModel: accuracy index $i = $value")
+        }
 
-        // Output
-        val modelResult = foodLabel[highestProbabilityIndex]
+        // Output - Parsing the label from assets/label.txt
+        val fileName = "label.txt"
+        val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
+        val foodLabel = inputString.split("\n")
+
+        // Get probability index
+        val max = getMax(outputFeature0.floatArray)
+
+        val modelResult = foodLabel[max]
         model.close()
 
         return modelResult
@@ -106,8 +130,8 @@ class ScanActivity : AppCompatActivity() {
         var min = 0.0f
         for (i in 0..14) {
             if (array[i] > min) {
-                min = array[i]
                 index = i
+                min = array[i]
             }
         }
         return index
@@ -124,4 +148,3 @@ class ScanActivity : AppCompatActivity() {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 }
-

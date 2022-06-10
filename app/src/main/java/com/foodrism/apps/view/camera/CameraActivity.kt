@@ -2,6 +2,8 @@ package com.foodrism.apps.view.camera
 
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -11,10 +13,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -23,6 +22,7 @@ import com.foodrism.apps.databinding.ActivityCameraBinding
 import com.foodrism.apps.helper.createFile
 import com.foodrism.apps.helper.uriToFile
 import com.foodrism.apps.view.scan.ScanActivity
+import java.nio.ByteBuffer
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -115,35 +115,61 @@ class CameraActivity : AppCompatActivity() {
     }
 
     private fun takePhoto() {
-        val imageCapture = imageCapture ?: return
-        val photoFile = createFile(application)
-        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
-        imageCapture.takePicture(
-            outputOptions,
-            ContextCompat.getMainExecutor(this),
-            object : ImageCapture.OnImageSavedCallback {
-                override fun onError(exc: ImageCaptureException) {
-                    Toast.makeText(
-                        this@CameraActivity,
-                        R.string.camera_shot_error,
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    Log.e(TAG, "onError: $exc")
-                }
+         val imageCapture = imageCapture ?: return
+         val photoFile = createFile(application)
+         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+         imageCapture.takePicture(
+             outputOptions,
+             ContextCompat.getMainExecutor(this),
+             object : ImageCapture.OnImageSavedCallback {
+                 override fun onError(exc: ImageCaptureException) {
+                     Toast.makeText(
+                         this@CameraActivity,
+                         R.string.camera_shot_error,
+                         Toast.LENGTH_SHORT
+                     ).show()
+                     Log.e(TAG, "onError: $exc")
+                 }
 
-                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    val intent = Intent(this@CameraActivity, ScanActivity::class.java)
-                    intent.putExtra(ScanActivity.EXTRA_IMAGE, photoFile)
-                    intent.putExtra(
-                        ScanActivity.EXTRA_STATE,
-                        cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
-                    )
-                    startActivity(intent)
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
-                }
+                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                     val intent = Intent(this@CameraActivity, ScanActivity::class.java)
+                     intent.putExtra(ScanActivity.EXTRA_IMAGE, photoFile)
+                     intent.putExtra(
+                         ScanActivity.EXTRA_STATE,
+                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
+                     )
+                     startActivity(intent)
+                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                     finish()
+                 }
+             }
+         )
+
+      /*  imageCapture?.takePicture(cameraExecutor, object :
+            ImageCapture.OnImageCapturedCallback() {
+            override fun onCaptureSuccess(image: ImageProxy) {
+                val bitmap = imageProxyToBitmap(image)
+                val intent = Intent(this@CameraActivity, ScanActivity::class.java)
+                intent.putExtra(ScanActivity.EXTRA_IMAGE, bitmap)
+                startActivity(intent)
+                super.onCaptureSuccess(image)
+                finish()
             }
-        )
+
+            override fun onError(exception: ImageCaptureException) {
+                Toast.makeText(this@CameraActivity, R.string.camera_shot_error, Toast.LENGTH_SHORT)
+                    .show()
+                super.onError(exception)
+            }
+        })*/
+    }
+
+    private fun imageProxyToBitmap(image: ImageProxy): Bitmap {
+        val planeProxy = image.planes[0]
+        val buffer: ByteBuffer = planeProxy.buffer
+        val bytes = ByteArray(buffer.remaining())
+        buffer.get(bytes)
+        return BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
     }
 
     override fun onDestroy() {
