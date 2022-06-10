@@ -88,7 +88,6 @@ class ScanActivity : AppCompatActivity() {
                 input.putFloat(bf)
             }
         }
-        val model = Model.newInstance(this)
 
         // Input for reference
         val inputFeature0 = TensorBuffer
@@ -96,6 +95,7 @@ class ScanActivity : AppCompatActivity() {
         inputFeature0.loadBuffer(input)
 
         // Runs model inference
+        val model = Model.newInstance(this)
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
 
@@ -110,9 +110,8 @@ class ScanActivity : AppCompatActivity() {
         val foodLabel = inputString.split("\n")
 
         // Get probability index
-        val max = getMax(outputFeature0.floatArray)
-
-        val modelResult = foodLabel[max]
+        val highestProbabilityIndex = getMax(outputFeature0.floatArray)
+        val modelResult = foodLabel[highestProbabilityIndex]
         model.close()
 
         return modelResult
