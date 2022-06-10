@@ -14,15 +14,6 @@ import com.foodrism.apps.databinding.ActivityScanBinding
 import com.foodrism.apps.helper.rotateBitmap
 import com.foodrism.apps.ml.Model
 import org.tensorflow.lite.DataType
-import org.tensorflow.lite.Interpreter
-import org.tensorflow.lite.support.common.FileUtil
-import org.tensorflow.lite.support.common.TensorProcessor
-import org.tensorflow.lite.support.common.ops.CastOp
-import org.tensorflow.lite.support.image.ImageProcessor
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.image.ops.ResizeOp
-import org.tensorflow.lite.support.image.ops.ResizeWithCropOrPadOp
-import org.tensorflow.lite.support.image.ops.Rot90Op
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
 import java.nio.ByteBuffer
@@ -78,7 +69,9 @@ class ScanActivity : AppCompatActivity() {
         val bitmap = BitmapFactory.decodeFile((getFile as File).path)
         val resized = Bitmap.createScaledBitmap(bitmap, 224, 224, true) as Bitmap
 
-        val input = ByteBuffer.allocateDirect(224 * 224 * 3 * 4).order(ByteOrder.nativeOrder())
+        val input = ByteBuffer
+            .allocateDirect(224 * 224 * 3 * 4)
+            .order(ByteOrder.nativeOrder())
         for (y in 0 until 224) {
             for (x in 0 until 224) {
                 val px = resized.getPixel(x, y)
@@ -98,8 +91,8 @@ class ScanActivity : AppCompatActivity() {
         val model = Model.newInstance(this)
 
         // Input for reference
-        val inputFeature0 =
-            TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
+        val inputFeature0 = TensorBuffer
+            .createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
         inputFeature0.loadBuffer(input)
 
         // Runs model inference
