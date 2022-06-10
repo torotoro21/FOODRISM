@@ -106,44 +106,45 @@ class CameraActivity : AppCompatActivity() {
                 cameraProvider.bindToLifecycle(
                     this, cameraSelector, preview, imageCapture
                 )
-            } catch (exc: Exception) {
+            } catch (e: Exception) {
                 Toast.makeText(
                     this@CameraActivity, R.string.camera_error, Toast.LENGTH_SHORT
                 ).show()
+                Log.e(TAG, "startCamera: Exception $e")
             }
         }, ContextCompat.getMainExecutor(this))
     }
 
     private fun takePhoto() {
-         val imageCapture = imageCapture ?: return
-         val photoFile = createFile(application)
-         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
-         imageCapture.takePicture(
-             outputOptions,
-             ContextCompat.getMainExecutor(this),
-             object : ImageCapture.OnImageSavedCallback {
-                 override fun onError(exc: ImageCaptureException) {
-                     Toast.makeText(
-                         this@CameraActivity,
-                         R.string.camera_shot_error,
-                         Toast.LENGTH_SHORT
-                     ).show()
-                     Log.e(TAG, "onError: $exc")
-                 }
+        val imageCapture = imageCapture ?: return
+        val photoFile = createFile(application)
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+        imageCapture.takePicture(
+            outputOptions,
+            ContextCompat.getMainExecutor(this),
+            object : ImageCapture.OnImageSavedCallback {
+                override fun onError(exc: ImageCaptureException) {
+                    Toast.makeText(
+                        this@CameraActivity,
+                        R.string.camera_shot_error,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    Log.e(TAG, "onError: $exc")
+                }
 
-                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                     val intent = Intent(this@CameraActivity, ScanActivity::class.java)
-                     intent.putExtra(ScanActivity.EXTRA_IMAGE, photoFile)
-                     intent.putExtra(
-                         ScanActivity.EXTRA_STATE,
-                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
-                     )
-                     startActivity(intent)
-                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                     finish()
-                 }
-             }
-         )
+                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                    val intent = Intent(this@CameraActivity, ScanActivity::class.java)
+                    intent.putExtra(ScanActivity.EXTRA_IMAGE, photoFile)
+                    intent.putExtra(
+                        ScanActivity.EXTRA_STATE,
+                        cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
+                    )
+                    startActivity(intent)
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    finish()
+                }
+            }
+        )
     }
 
     override fun onDestroy() {
