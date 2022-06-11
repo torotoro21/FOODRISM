@@ -34,32 +34,44 @@
     <string name="not_available">Not available yet…</string>
     <string name="profile_email">Email</string>
     <string name="logout_cancel">Cancel</string>
+    <string name="food_accuracy">90%</string>
+    <string name="scan_again">Scan Again</string>
 
 
     <string-array name="data_name">
-        <item>Klepon</item>
-        <item>Pempek</item>
-        <item>Tahu Gejrot</item>
-        <item>Rendang</item>
-        <item>Gudeg</item>
-        <item>Gulai</item>
-        <item>Soto Ayam</item>
+        <item>Gulai Ayam</item>
         <item>Kerak Telor</item>
+        <item>Soto Ayam</item>
         <item>Bika Ambon</item>
+        <item>Gudeg</item>
+        <item>Klepon</item>
+        <item>Martabak</item>
+        <item>Nasi Tumpeng</item>
+        <item>Pecel</item>
+        <item>Pempek</item>
         <item>Rawon</item>
+        <item>Rendang</item>
+        <item>Sate Ayam</item>
+        <item>Serabi</item>
+        <item>Tahu Gejrot</item>
     </string-array>
 
-    <string-array name="data_description">
-        <item>Klepon is a traditional Indonesian snack which is generally made from white glutinous rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut. </item>
-        <item>Pempek or empek-empek is a food made from soft ground fish meat mixed with starch or sago flour, as well as a composition of several other ingredients such as eggs, mashed garlic, flavoring, and salt.</item>
-        <item>Tahu gejrot is a typical food from Cirebon, Indonesia made from tofu and other spices.</item>
-        <item>Rendang is produced from a long low temperature cooking process using various spices and coconut milk</item>
-        <item>Gudeg is made from young jackfruit (Javanese: gori, Indonesian: young jackfruit) which is boiled for several hours with palm sugar and coconut milk.</item>
-        <item>Gulai is a type of food containing a rich, spicy and delicious curry-like sauce</item>
-        <item>Soto Ayam is a traditional Indonesian dish that uses ingredients such as chicken</item>
-        <item>Kerak Telor is a Betawi traditional spicy omelet dish in Indonesian cuisine.</item>
-        <item>Bika Ambon is made from ingredients such as tapioca flour, eggs, sugar, and coconut milk</item>
-        <item>Rawon utilizes the black keluak nut as the main seasoning, which gives a dark color and nutty flavor to the soup.</item>
+    <string-array name="data_description" >
+        <item>Gulai is a type of food containing a rich, spicy and delicious curry like sauce commonly found in Indonesia, Malaysia and Singapore. The main ingredients of this dish are usually poultry, mutton, beef, mutton, various kinds of offal, fish and seafood, as well as vegetables such as cassava leaves, raw jackfruit and banana stems. Gulai is often described as Indonesian curry, although it is also considered a local dish in Malaysia and Singapore. Gulai is a common name for curry dishes in Indonesia, although Indonesian, Malaysian and Singaporean cuisines also recognize curry (curry). Gulai originates from the Indonesian island of Sumatra and is considered a local adaptation of Indian curry, having evolved and originated from Indian influence in Southeast Asia. This dish is widely served in the Malay Archipelago, especially in Sumatra, the Malay Peninsula, Java, and Kalimantan. The thick, yellowish curry gravy is one of the most common sauces found in Minangkabau cuisine, used to impart a rich and spicy taste to meat, fish and vegetables. Goulash is often described as delicious and spicy, but it subtly combines the flavors of the different spices into one soft and subtle flavor that makes it difficult to tell which individual spices are used</item>
+        <item>Kerak telor (English: Egg crust) is a Betawi traditional spicy omelet dish in Indonesian cuisine. It is made from glutinous rice cooked with egg and served with serundeng (fried shredded coconut), fried shallots, and dried shrimp as topping. It is considered as a snack and not as a main dish. The vendors of kerak telor are easily the most ubiquitous during the annual Jakarta Fair and it has also become a must-have menu item for visitors at the event.</item>
+        <item>Soto Ayam is a traditional Indonesian dish that uses ingredients such as chicken, lontong, noodles, and rice vermicelli. Soto Ayam is popular in Singapore, Malaysia, and Suriname. Turmeric is added as one of its main ingredients which makes the yellow chicken broth. It is one of the most popular variants of Soto, a traditional soup commonly found in Indonesian cuisine. Besides chicken and vermicelli, it can also be served with hard-boiled eggs, slices of fried potatoes, and Chinese celery leaves. Fried shallots are usually added as a garnish. Coconut milk (Santan) is also used as an additional ingredient. Koya, a powder of mixed prawn crackers with fried garlic, or sambal is a common topping. Krupuk or emping is also a common topping. Lalapan is usually served as a side dish.</item>
+        <item>Bika Ambon is a typical food from Medan, North Sumatra. Made from ingredients such as tapioca flour, eggs, sugar, and coconut milk. Now Bika Ambon is sold not only in original flavors but also in pandan, durian, cheese, and chocolate flavors. Bika Ambon, which is cooked for 12 hours, usually lasts at its best for four days, after which the cake begins to harden. This wet cake usually has a net on the inside. There is also Bika Ambon which is sold in various flavors such as pandan, chocolate, cheese and others. According to the explanation of M Muhar Omtatok, a humanist and historian, the Bika Ambon cake was inspired by Bika or Bingka, a typical Malay food. Furthermore, the frame is modified with a developer material in the form of palm wine/ palm wine until it is hollow and different from the original Bika cake. Furthermore, M. Muhar Omtatok mentioned that this cake is called Bika Ambon because it was first sold and popular at the intersection of Jl Ambon-Sei Kera Medan.</item>
+        <item>Gudeg is a traditional Javanese dish from Yogyakarta and Central Java, Indonesia. Gudeg is made from young jackfruit (Javanese: gori, Indonesian: young jackfruit) which is boiled for several hours with palm sugar and coconut milk. Additional spices include garlic, shallots, candlenut, coriander seeds, galangal, bay leaf, and teak leaves, the latter of which imparts a reddish-brown color to the dish. It is often described as a \'sweet green jackfruit stew\'.</item>
+        <item> Klepon is a traditional Indonesian snack which is generally made from white glutinous    rice flour shaped like small balls filled with brown sugar and sprinkled with grated coconut. Klepon cake has a chewy, dense, sweet texture and doesn\'t have any long shelf life. This food is made from white glutinous rice flour which is given green coloring either from suji leaves or pandan leaves mixed with coconut milk then formed into rounds, filled with brown sugar and boiled in water boiling</item>
+        <item>Starting from a young man from Lebaksiu Tegal, Central Java named Ahmad bin Abdul Karim who traveled to the big city, Semarang to trade in 1930. Then he met an Indian citizen named Abdullah bin Hasan al-Malibary who was good at cooking and became friends. Once, Abdullah, who is from India, was invited to Ahmad\'s hometown and introduced to his sister, and the introduction resulted in a marriage between the two. Abdullah is also good at making a dish made from flour called martabak, because he lives in Indonesia so he makes Martabak cake which is more adapted for the tongue of Javanese people who like to eat vegetables, namely martabak which contains vegetables mixed with other ingredients. Because this food is widely liked, many relatives and neighbors of Ahmad\'s best friend and his wife are taught to make the martabak cake, even this food is also often introduced at various events outside the city such as night markets, as well as sekatenan events in Yogyakarta and dugderan in Semarang. And now egg martabak is very popular in Indonesia and has spread everywhere</item>
+        <item>Tumpeng or rice tumpeng is a Javanese food whose rice is served in a cone shape and arranged together with the side dishes. Processed rice used is generally in the form of yellow rice, plain white rice, or uduk rice. This way of serving rice is typical of Javanese or Betawi people of Javanese descent and is usually made during a feast or celebration of an important event. However, the Indonesian people are familiar with this activity in general. Tumpeng is usually served on a tampah (traditional round container made of woven bamboo) which has been lined with banana leaves. People on the islands of Java, Bali and Madura have a habit of making tumpeng for a feast or celebrating an important event, such as a birthday or birthday celebration and various other thanksgiving events.</item>
+        <item> Pecel is a food originating from the island of Java, this food is usually served with peanut sauce as the main ingredient and mixed with various types of vegetables. This food is popular especially in DI Yogyakarta, Central Java, and East Java. Etymologically, in Javanese, pecel can be interpreted as \'mashed\' or \'crushed by pounding\'. Pecel is said to have been enjoyed by the people of the archipelago in the 9th century AD, but historical evidence says that in fact the people of the archipelago already knew pecel long before the 9th century AD and had been recorded in ancient Javanese books such as the Kakawin Ramayana, Babad Tanah Jawi. Not only that, the term pecel has also been written in the Siman inscription located in Kediri.</item>
+        <item>Pempek or empek-empek is a food made from soft ground fish meat mixed with starch or sago flour, as well as a composition of several other ingredients such as eggs, mashed garlic, flavoring, and salt. Pempek is usually served with vinegar sauce which has a sour, sweet, and spicy taste. Pempek is often referred to as a typical Palembang food, although almost all regions in South Sumatra, Jambi and Bengkulu also produce it. Pempek can be found easily in Palembang City, some areas of South Sumatra to Bengkulu province; some sell them in restaurants, some are on the roadside, and some are carried. In the 1880s, sellers used to carry a basket full of pempek while walking around selling their wares.</item>
+        <item>Rawon is an Indonesian beef soup. Rawon is one of the oldest historically identified dishes of ancient Java. It was mentioned as rarawwan in an ancient Javanese Taji inscription (901 CE) from the era of the Mataram Kingdom. Originating from East Java, rawon utilizes the black keluak nut as the main seasoning, which gives a dark color and nutty flavor to the soup. The soup is composed of a ground mixture of garlic, shallots, keluak, ginger, candlenut, turmeric, red chili, and salt, and is sautéed with oil. The sautéed mixture is then poured into boiled beef stock with diced beef slices. Lemongrass, galangal, bay leaves, kaffir lime leaves, and sugar are then added as seasonings.The special dark or black color of rawon comes from the keluak as the main spice. The soup is usually garnished with green onion and fried shallot, and served with rice. Other toppings include bean sprouts, salted preserved egg, krupuk, and fried tolo beans (black-eyed pea).</item>
+        <item>Rendang or rendang is a meat dish originating from Minangkabau. This dish is produced from a long low temperature cooking process using various spices and coconut milk. The cooking process takes hours (usually about four hours) until the remaining chunks of meat are jet black and bran. The origin of rendang comes from Sumatra, especially Minangkabau. For the Minang people, rendang has been around for a long time and has become a traditional dish that is served in various traditional events and daily dishes. As a traditional dish, memorable rendang has been born since the Minang people held the first traditional event. Then this cooking art developed into another Malay-cultured overseas area; starting from Mandailing, Riau, Jambi, to the other country in Negeri Sembilan which is much favored by immigrants from Minangkabau. That\'s why rendang is widely known both in Sumatra and the Malay Peninsula. </item>
+        <item>Sate or satai is a food made from meat that is cut into small pieces and stabbed in such a way with a stick of coconut or bamboo leaf bone, then grilled using wood charcoal coals. Satay is served with a variety of spices depending on the variation of the satay recipe. The meat used for satay includes chicken, goat, lamb, beef, pork, rabbit, horse, and others. Sate is known to originate from Java, Indonesia, and can be found anywhere in Indonesia and has been considered as one of Indonesia\'s national dishes. The word \'sate\' or \'satai\' is thought to be of Tamil origin. It is suspected that satay was invented by street food vendors in Java around the early 19th century, based on the fact that satay became popular around the early 19th century along with the increasing number of immigrants from Arab and Muslim Tamil and Gujarat immigrants from India to Indonesia.</item>
+        <item>Srabi Solo or Serabi Solo is a snack originating from Solo, Central Java. This food is made from rice flour mixed with coconut milk and fried on charcoal like a pancake (bread pan) or pancakes. Srabi is a typical snack from Solo made from coconut milk mixed with a little flour, which gives it a savory taste. Usually also given a sprinkling of pieces of banana, jackfruit or even meses and cheese if you like. The famous Srabi comes from the Notokusuman area, which is often shortened to Notosuman (Srabi Notosuman).</item>
+        <item>Tahu gejrot is a typical food from Cirebon, Indonesia made from tofu and other spices. Tahu gejrot consists of tofu that has been fried and then cut into small pieces and then eaten with a sauce with chili, garlic, shallots, and sugar. Tahu gejrot is also a typical Cirebon snack that is popular among children and adults, because of its distinctive taste sensation. Tahu gejrot is tofu which is cut into small pieces and then placed on a small plate and the tofu used is sumedang tofu. How to eat it is also unique, namely with a small stick and then pierce the tofu that has been cut into pieces. Currently, Tahu gejrot has spread throughout Indonesia such as Jakarta, Malang, Depok, Surabaya, and several places in other big cities in Indonesia.</item>
     </string-array>
 
     <string-array name="data_origin">
@@ -73,19 +85,84 @@
         <item>Jakarta</item>
         <item>Medan</item>
         <item>East Java</item>
+        <item>East Java</item>
+        <item>East Java</item>
+        <item>East Java</item>
+        <item>East Java</item>
+        <item>East Java</item>
+    </string-array>
+
+    <string-array name="data_ingredients">
+        <item>Chicken and the gulai sauce composes of ingredients such as garlic, shallot, turmeric, turmeric leaf and pineapple</item>
+        <item>Glutinous rice, Eggs, Ebi, Tapioca Flour, Sugar, Egg, Coconut Milk, Coconut Water and Bread Yeast</item>
+        <item>Rice, chicken, dried vegetables</item>
+        <item>Tapioca Flour, Sugar, Egg, Coconut Milk, Coconut Water and Bread Yeast</item>
+        <item>Young jackfruit, coconut milk, palm sugar, chili, various spices, chicken, egg, tempeh (optional)</item>
+        <item>Rice cake, palm sugar (gula jawa/merah/melaka), grated coconut</item>
+        <item>Martabak skin, egg, meat</item>
+        <item>Cone-shaped rice, urap (boiled vegetables mixed with seasoned grated coconut), serundeng, grilled chicken, fried chicken, dried tempeh, pindang eggs, sliced omelet, anchovies.</item>
+        <item>Leafy vegetables, bean sprouts (or any other plant sprouts), long beans, and cabbages.</item>
+        <item>Cod fish or any white meat fish 1 and tapioca or corn flour</item>
+        <item>Pieces of meat with a mixture of black gravy. The gravy on rawon is made from spices, such as shallots, garlic, galangal, coriander, turmeric, ginger, chilies.</item>
+        <item>Beef, Chili spices, coconut milk</item>
+        <item>Various pieces of bamboo skewered meat with various spices</item>
+        <item>Rice flour mixed with coconut milk</item>
+        <item>Tofu, Onion, Chili spices, coconut milk</item>
+    </string-array>
+
+    <string-array name="data_calories">
+        <item>125 kcal in 100 grams.</item>
+        <item>100 kcal in 50 grams</item>
+        <item>312 kcal in 1 bowl (200 grams)</item>
+        <item>185 kcal in 100 grams</item>
+        <item>127 kcal in 100 gram</item>
+        <item>215 kcal energy (10% RDA) per 100 gram</item>
+        <item>203 kcal in 110 gram</item>
+        <item>320 kcal in one serving (100 grams)</item>
+        <item>79 kcal in pecel (1 plate).</item>
+        <item>195 kcal per 100 grams</item>
+        <item>119 kcal in 100 grams</item>
+        <item>195 calories 100 grams.</item>
+        <item>225 kcal in 100 grams</item>
+        <item>108 kcal in one piece of Serabi (50 gram).</item>
+        <item>98 calories in 100 grams.</item>
+    </string-array>
+
+    <string-array name="data_nutrition">
+        <item>51% fat, 9% carbohydrates, 40% protein</item>
+        <item>51% Carbohydrates, 45% Fat, 4% protein </item>
+        <item>44% fat, 25% carbohydrates, 31% protein.</item>
+        <item>15% fat, 80% carbohydrates, 5% protein</item>
+        <item>30% fat, 65% carbohydrates, 5% protein</item>
+        <item>3.7 grams total fat (5.52%), 3.7 grams protein (6.17%), total carbohydrates 3.70 grams (12 .86%), and 1 gram of dietary fiber (3.33%)</item>
+        <item>38% fat, 41% carbohydrates, 22% protein</item>
+        <item>25% fat, 68% carbohydrates, 7% protein</item>
+        <item>58% fat, 31% carbohydrates,10% protein</item>
+        <item>24% fat, 49% carbohydrates, 26% protein.</item>
+        <item>56% fat, 12% carbohydrates, 32% protein</item>
+        <item>70% fat, 7% carbohydrates, 23% protein.</item>
+        <item>58% fat, 8% carbohydrates, 34% protein</item>
+        <item>5% fat, 79% carbohydrates, 6% protein</item>
+        <item>70% fat, 7% carbohydrates, 23% protein.</item>
     </string-array>
 
     <string-array name="data_photo_url">
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/klepon_00000005.jpg</item>
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/pempek_00000000.jpg</item>
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/tahu_gejrot_00000001.jpg</item>
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/rendang_00000004.jpg</item>
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/gudeg_00000005.jpg</item>
         <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/gulai_ayam_00000033.jpg</item>
-        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/soto_ayam_00000002.jpg</item>
         <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/kerak_telor_00000000.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/soto_ayam_00000002.jpg</item>
         <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/bika_ambon_00000003.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/gudeg_00000005.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/klepon_00000005.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/martabak_00000015.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/nasi_tumpeng_00000003.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/pecel_00000021.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/pempek_00000000.jpg</item>
         <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/rawon_00000000.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/rendang_00000004.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/sate_00000000.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/serabi_00000003.jpg</item>
+        <item>https://raw.githubusercontent.com/torotoro21/FOODRISM/main/Assets/Image/tahu_gejrot_00000001.jpg</item>
+
     </string-array>
 
 
