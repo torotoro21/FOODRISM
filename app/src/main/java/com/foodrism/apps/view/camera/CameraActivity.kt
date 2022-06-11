@@ -55,7 +55,7 @@ class CameraActivity : AppCompatActivity() {
 
     private fun setActions() {
         binding.captureImage.setOnClickListener {
-            takePhoto()
+            startCapture()
         }
         binding.openGallery.setOnClickListener {
             startGallery()
@@ -67,7 +67,6 @@ class CameraActivity : AppCompatActivity() {
             startCamera()
         }
     }
-
 
     private fun startGallery() {
         val intent = Intent()
@@ -97,15 +96,11 @@ class CameraActivity : AppCompatActivity() {
             val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
             val preview = Preview.Builder()
                 .build()
-                .also {
-                    it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
-                }
+                .also { it.setSurfaceProvider(binding.viewFinder.surfaceProvider) }
             imageCapture = ImageCapture.Builder().build()
             try {
                 cameraProvider.unbindAll()
-                cameraProvider.bindToLifecycle(
-                    this, cameraSelector, preview, imageCapture
-                )
+                cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageCapture)
             } catch (e: Exception) {
                 Toast.makeText(
                     this@CameraActivity, R.string.camera_error, Toast.LENGTH_SHORT
@@ -115,7 +110,7 @@ class CameraActivity : AppCompatActivity() {
         }, ContextCompat.getMainExecutor(this))
     }
 
-    private fun takePhoto() {
+    private fun startCapture() {
         val imageCapture = imageCapture ?: return
         val photoFile = createFile(application)
         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()

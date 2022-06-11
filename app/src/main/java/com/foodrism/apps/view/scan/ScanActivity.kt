@@ -121,12 +121,6 @@ class ScanActivity : AppCompatActivity() {
 
         val highestProbabilityIndex = getMax(outputFeature0.floatArray)
 
-        // Output - Parsing the label from assets/label.txt
-        /*val fileName = "label.txt"
-        val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
-        val foodLabel = inputString.split("\n")
-        val modelResult = foodLabel[highestProbabilityIndex]*/
-
         for (i in 0..14) {
             val value = outputFeature0.floatArray[i]
             Log.i(TAG, "analyzeModel: accuracy index $i = $value")

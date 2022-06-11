@@ -35,6 +35,7 @@
     <string name="logout_cancel">Cancel</string>
     <string name="food_accuracy">90%</string>
     <string name="scan_again">Scan Again</string>
+    <string name="search_maps">Find nearby</string>
 
 
     <string-array name="data_name">
