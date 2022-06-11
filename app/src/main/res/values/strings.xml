@@ -10,7 +10,7 @@
     <string name="food_calories">Calories:</string>
     <string name="food_name">Food Name</string>
     <string name="food_origin">Food Origin</string>
-    <string name="maps">Find On Google Maps</string>
+    <string name="maps">Find on Google Maps</string>
 
     <string name="profile_photo">Profile Photo</string>
     <string name="profile_name">Profile Name</string>
@@ -37,6 +37,7 @@
     <string name="food_accuracy">90%</string>
     <string name="scan_again">Scan Again</string>
     <string name="search_maps">Find nearby</string>
+    <string name="maps_title">Find Nearby:</string>
 
 
     <string-array name="data_name">

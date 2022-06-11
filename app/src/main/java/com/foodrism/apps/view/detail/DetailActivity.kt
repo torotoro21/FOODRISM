@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -13,12 +12,9 @@ import com.foodrism.apps.R
 import com.foodrism.apps.databinding.ActivityDetailBinding
 import com.foodrism.apps.model.FoodModel
 
-class DetailActivity : AppCompatActivity(), View.OnClickListener {
+class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
-
-    private lateinit var foodName: TextView
-    private lateinit var food_name: String
 
     companion object {
         const val EXTRA_DETAIL = "food"
@@ -32,20 +28,6 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setupData()
 
-        foodName = findViewById(R.id.tvFoodName)
-        val maps: Button = findViewById(R.id.btnMaps)
-        maps.setOnClickListener(this)
-    }
-
-    override fun onClick(v: View) {
-        when (v.id) {
-            R.id.btnMaps -> {
-                food_name = foodName.text.toString()
-                val gmmIntentUri = Uri.parse("geo:0,0?p=${food_name}")
-                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-                mapIntent.setPackage("com.google.android.apps.maps")
-            }
-        }
     }
 
     private fun setupData() {
@@ -61,7 +43,12 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             tvFoodIngredients.text = food.ingredients
             tvFoodCalories.text = food.calories
             tvFoodNutrition.text = food.nutrition
-
+        }
+        binding.btnMaps.setOnClickListener {
+            val query = Uri.parse("geo:0,0?q=${food.name}")
+            val mapIntent = Intent(Intent.ACTION_VIEW, query)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
         }
     }
 

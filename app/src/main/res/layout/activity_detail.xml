@@ -153,20 +153,34 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvNutritionTitle"
                 tools:text="@string/food_description" />
 
+            <TextView
+                android:id="@+id/tvMapsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/maps_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFoodNutrition" />
+
             <Button
                 android:id="@+id/btnMaps"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn_search"
+                android:drawableStart="@drawable/ic_search"
+                android:padding="8dp"
                 android:text="@string/maps"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvFoodNutrition"/>
-
-
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvMapsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvMapsTitle" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
