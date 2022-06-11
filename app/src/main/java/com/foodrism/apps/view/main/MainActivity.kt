@@ -66,10 +66,22 @@ class MainActivity : AppCompatActivity() {
             val dataName = resources.getStringArray(R.array.data_name)
             val dataDescription = resources.getStringArray(R.array.data_description)
             val dataPhoto = resources.getStringArray(R.array.data_photo_url)
-            val dataOrigin  = resources.getStringArray(R.array.data_origin)
+            val dataOrigin = resources.getStringArray(R.array.data_origin)
+            val dataIngredients = resources.getStringArray(R.array.data_ingredients)
+            val dataCalories = resources.getStringArray(R.array.data_calories)
+            val dataNutrition = resources.getStringArray(R.array.data_nutrition)
+
             val listFoodData = ArrayList<FoodModel>()
-            for (i in dataName.indices){
-                val food  = FoodModel(dataName[i],  dataDescription[i], dataOrigin[i], dataPhoto[i])
+            for (i in dataName.indices) {
+                val food = FoodModel(
+                    dataName[i],
+                    dataDescription[i],
+                    dataOrigin[i],
+                    dataPhoto[i],
+                    dataIngredients[i],
+                    dataCalories[i],
+                    dataNutrition[i]
+                )
                 listFoodData.add(food)
             }
             return listFoodData

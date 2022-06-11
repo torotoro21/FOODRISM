@@ -8,5 +8,8 @@ data class FoodModel(
     var name: String,
     var description: String,
     var origin: String,
-    var url: String
+    var url: String,
+    var ingredients: String,
+    var calories: String,
+    var nutrition: String
 ) : Parcelable

@@ -35,8 +35,13 @@ class DetailActivity : AppCompatActivity() {
                 .into(ivFoodItems)
             tvFoodName.text = food.name
             tvFoodDescription.text = food.description
+            tvFoodIngredients.text = food.ingredients
+            tvFoodCalories.text = food.calories
+            tvFoodNutrition.text = food.nutrition
+
         }
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)

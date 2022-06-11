@@ -156,8 +156,11 @@ class ScanActivity : AppCompatActivity() {
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.getStringArray(R.array.data_photo_url)
         val dataOrigin = resources.getStringArray(R.array.data_origin)
-        val listFoodData = ArrayList<FoodModel>()
+        val dataIngredients = resources.getStringArray(R.array.data_ingredients)
+        val dataCalories = resources.getStringArray(R.array.data_calories)
+        val dataNutrition = resources.getStringArray(R.array.data_nutrition)
 
+        val listFoodData = ArrayList<FoodModel>()
         val fileName = "label.txt"
         val inputString = application.assets.open(fileName).bufferedReader().use { it.readText() }
         val foodLabel = inputString.split("\n")
@@ -171,7 +174,9 @@ class ScanActivity : AppCompatActivity() {
         val percentage = min * 100
 
         for (i in foodLabel.indices) {
-            val food = FoodModel(dataName[i], dataDescription[i], dataOrigin[i], dataPhoto[i])
+            val food = FoodModel(
+                dataName[i],dataDescription[i],dataOrigin[i],dataPhoto[i],dataIngredients[i],dataCalories[i],dataNutrition[i]
+            )
             listFoodData.add(food)
         }
 
@@ -196,10 +201,7 @@ class ScanActivity : AppCompatActivity() {
             intent.putExtra(DetailActivity.EXTRA_DETAIL, data)
             it.context.startActivity(intent, transition.toBundle())
         }
-
-
     }
-
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
