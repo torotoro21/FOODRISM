@@ -30,4 +30,5 @@ This project was a part of Bangkit 2022 Product-based Capstone Project which con
 * Training dataset
 * Create prediction and testing the result
 * Convert keras model into tflite model
+* Predicting from tflite model
 
