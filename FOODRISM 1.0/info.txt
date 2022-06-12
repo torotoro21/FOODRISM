@@ -1,4 +1,0 @@
-https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/
-
-python generate_tfrecord.py --csv_input=data/train.csv --output_path=data/train.record --image_dir=images/train/
-python generate_tfrecord.py --csv_input=data/test.csv --output_path=data/test.record --image_dir=images/test/

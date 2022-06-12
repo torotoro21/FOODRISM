@@ -1,3 +1,0 @@
-# FOODRISM
-
-testing 123
