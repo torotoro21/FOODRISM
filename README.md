@@ -23,4 +23,11 @@ This project was a part of Bangkit 2022 Product-based Capstone Project which con
 ### How to Use
 * Go to *master* branch and follow the instruction
 
+### Machine Learning Documentation
+* Collecting dataset by scraping from google
+* Splitting dataset into training and testing
+* Load pre-trained model "mobilenetV2" and get the architecture using hub.Keraslayer then add more layer
+* Training dataset
+* Create prediction and testing the result
+* Convert keras model into tflite model
 
