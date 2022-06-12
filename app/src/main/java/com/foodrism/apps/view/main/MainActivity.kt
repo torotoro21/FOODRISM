@@ -13,6 +13,7 @@ import com.foodrism.apps.databinding.ActivityMainBinding
 import com.foodrism.apps.model.FoodModel
 import com.foodrism.apps.view.adapter.FoodListAdapter
 import com.foodrism.apps.view.camera.CameraActivity
+import com.foodrism.apps.view.login.LoginActivity
 import com.foodrism.apps.view.profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnCamera.setOnClickListener {
-            val intent = Intent(this@MainActivity, CameraActivity::class.java)
+            val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
         }
 

@@ -38,6 +38,9 @@
     <string name="scan_again">Scan Again</string>
     <string name="search_maps">Find nearby</string>
     <string name="maps_title">Find Nearby:</string>
+    <string name="password_error">Password Invalid</string>
+    <string name="email_error">Email Invalid</string>
+    <string name="login">Login</string>
 
 
     <string-array name="data_name">

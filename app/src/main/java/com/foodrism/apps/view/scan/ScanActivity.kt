@@ -17,15 +17,19 @@ import androidx.core.util.Pair
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.foodrism.apps.R
+import com.foodrism.apps.data.room.HistoryDatabase
+import com.foodrism.apps.data.room.HistoryEntity
 import com.foodrism.apps.databinding.ActivityScanBinding
-import com.foodrism.apps.helper.compressImage
+import com.foodrism.apps.helper.getCurrentDateTime
 import com.foodrism.apps.helper.rotateBitmap
+import com.foodrism.apps.helper.toString
 import com.foodrism.apps.ml.Model
 import com.foodrism.apps.model.FoodModel
 import com.foodrism.apps.view.camera.CameraActivity
 import com.foodrism.apps.view.detail.DetailActivity
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import java.io.ByteArrayOutputStream
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -56,8 +60,7 @@ class ScanActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         imageFile = intent.getSerializableExtra(EXTRA_IMAGE) as File
-        val compressed = compressImage(imageFile as File)
-        bitmap = BitmapFactory.decodeFile((compressed).path)
+        bitmap = BitmapFactory.decodeFile((imageFile)!!.path)
 
         scanResult()
         analyzeModel()
@@ -69,6 +72,7 @@ class ScanActivity : AppCompatActivity() {
             finish()
         }
     }
+
 
     private fun scanResult() {
         binding.analyzeProgressBar.visibility = View.VISIBLE
@@ -169,7 +173,13 @@ class ScanActivity : AppCompatActivity() {
 
         for (i in foodLabel.indices) {
             val food = FoodModel(
-                dataName[i],dataDescription[i],dataOrigin[i],dataPhoto[i],dataIngredients[i],dataCalories[i],dataNutrition[i]
+                dataName[i],
+                dataDescription[i],
+                dataOrigin[i],
+                dataPhoto[i],
+                dataIngredients[i],
+                dataCalories[i],
+                dataNutrition[i]
             )
             listFoodData.add(food)
         }
@@ -195,6 +205,18 @@ class ScanActivity : AppCompatActivity() {
             intent.putExtra(DetailActivity.EXTRA_DETAIL, data)
             it.context.startActivity(intent, transition.toBundle())
         }
+
+        // Save scanned history
+       /* val date = getCurrentDateTime().toString("yyyy/MM/dd HH:mm:ss")
+
+        val stream = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
+        val imageByte: ByteArray = stream.toByteArray()
+
+        HistoryDatabase.INSTANCE.historyDao()
+            .insertHistory(HistoryEntity(data.name, date, imageByte))
+        setResult(200)*/
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
